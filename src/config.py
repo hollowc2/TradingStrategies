@@ -15,10 +15,17 @@ class StrategyConfig:
     # Strategy Parameters
     max_positions: int = 10
     position_size: float = 0.1  # 10% of capital per position
-    rsi_period: int = 2
+    rsi_period: int = 3
     rsi_entry_threshold: float = 10.0
     ma_trend_period: int = 200  # Trend filter
     ma_exit_period: int = 10    # Exit signal
+    
+    # Stop Loss Parameters
+    use_stop_loss: bool = True
+    stop_loss_type: str = 'volatility'  # 'fixed' or 'volatility'
+    stop_loss_pct: float = 0.05  # 5% stop loss from entry price (if fixed)
+    atr_period: int = 14  # ATR period for volatility calculation
+    atr_multiplier: float = 2.5  # ATR multiplier for stop loss (2.5x ATR below entry)
     
     # Portfolio Configuration
     initial_cash: float = 100000.0

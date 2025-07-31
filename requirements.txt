@@ -1,0 +1,33 @@
+# RSI(2) Mean Reversion Strategy Dependencies
+
+# Core libraries
+pandas>=1.5.0
+numpy>=1.20.0
+
+# Vectorbt for backtesting and technical analysis
+vectorbt>=0.25.0
+
+# MongoDB client
+pymongo>=4.0.0
+
+# Visualization
+matplotlib>=3.5.0
+plotly>=5.0.0
+
+# Technical analysis (fallback if needed)
+pandas-ta>=0.3.14b0
+
+# Data handling and analysis
+scipy>=1.8.0
+numba>=0.56.0
+
+# Additional utilities
+python-dateutil>=2.8.0
+pytz>=2022.1
+
+# Development and testing (optional)
+jupyter>=1.0.0
+notebook>=6.4.0
+
+# Performance optimization
+bottleneck>=1.3.0
